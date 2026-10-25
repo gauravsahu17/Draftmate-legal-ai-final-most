@@ -1,0 +1,1 @@
+import {describe,it,expect} from 'vitest';import {render} from '@testing-library/react';import App from './App';describe('DraftMate interface',()=>{it('shows the workspace navigation',()=>{const {getByText}=render(<App/>);expect(getByText('DraftMate')).toBeTruthy();expect(getByText('Drafting Studio')).toBeTruthy()})});
